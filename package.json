@@ -1,0 +1,14 @@
+{
+  "name": "jeremywells.io.v2",
+  "version": "1.0.0",
+  "description": "Code for blog found at jeremywells.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "@jsheridanwells",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
