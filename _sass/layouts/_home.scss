@@ -1,0 +1,19 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.home-header-container {
+    border: 1px solid green;
+}
+
+.home-content-container {
+    flex-grow: 1;
+    border: 1px solid blue;
+    margin: auto;
+    padding: 1rem;
+    width: 50%;
+    height: 100%;
+}
