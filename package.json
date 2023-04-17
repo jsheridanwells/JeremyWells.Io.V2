@@ -4,13 +4,19 @@
   "description": "Code for blog found at jeremywells.io",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --quiet"
+    "watch:sass": "sass --watch _sass:_site/assets/css",
+    "build:sass": "sass --no-source-map _sass:_site/assets/css",
+    "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
+    "build:eleventy": "npx @11ty/eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
   },
   "author": "@jsheridanwells",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "luxon": "^3.3.0"
+    "luxon": "^3.3.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.62.0"
   }
 }
