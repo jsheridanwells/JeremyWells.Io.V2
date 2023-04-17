@@ -1,4 +1,4 @@
 {
-    "layout": "layout.liquid",
+    "layout": "home.njk",
     "tags": ["posts"]
 }
