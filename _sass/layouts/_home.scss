@@ -1,19 +1,23 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     height: 100%;
+    background-color: $offWhite;
+}
+
+.home-header-container-outer {
+    width: 100%;
+    background-color: $brown;
 }
 
 .home-header-container {
-    border: 1px solid green;
+    margin: auto;
+    width: 50%;
 }
 
 .home-content-container {
     flex-grow: 1;
-    border: 1px solid blue;
     margin: auto;
-    padding: 1rem;
     width: 50%;
-    height: 100%;
+    background-color: $offWhite;
 }

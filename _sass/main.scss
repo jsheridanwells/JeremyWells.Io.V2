@@ -1,5 +1,7 @@
 @import "colors";
 @import "layouts/home";
+@import "includes/header";
+@import "index";
 
 *,
 *:before,
@@ -20,3 +22,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $offWhite;
 }
+

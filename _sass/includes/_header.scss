@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-box, .socials-box {
+    flex-grow: 1;
+}
+
+ul.socials-list {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li.nav-item {
+    display: inline-block;
+    margin: 0 5rem;
+}
