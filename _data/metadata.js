@@ -7,5 +7,10 @@ module.exports = {
 		name: 'Jeremy Wells',
 		email: 'hi@jeremywells.io',
 		url: 'https//jeremywells.io/about'
-	}
+	},
+	socialList: [
+		{ name: 'fab fa-github', url: 'https://github.comhttps://github.com/jsheridanwells' },
+		{ name: 'fab fa-dev', url: 'https://dev.to/jsheridanwells' },
+		{ name: 'fab fa-linkedin', url: 'https://linkedin.com/in/jsheridanwells' }
+	]
 }

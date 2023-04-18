@@ -1,22 +1,20 @@
 <div class="header">
     <div class="header-top">
         <div class="logo-box">
-            <h1 class="logo">JeremyWells.io</h1>
+            <h1 class="logo">Jeremy Wells</h1>
             <p class="subtext">
                 {{ metadata.description }}
             </p>
         </div>
         <div class="socials-box">
             <ul class="socials-list">
-                <li class="socials-list-item">
-                    <a href="#">github</a>
-                </li>
-                <li class="socials-list-item">
-                    <a href="#">linkdedin</a>
-                </li>
-                <li class="socials-list-item">
-                    <a href="#">dev.to</a>
-                </li>
+                {% for i in metadata.socialList %}
+                    <li class="socials-list-item">
+                        <a href="{{ i.url }}" target="_blank">
+                            <i class="{{ i.name }} fa-2x social-icon"></i>
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
