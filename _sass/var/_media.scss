@@ -1,20 +1,13 @@
-$headerOnSide: 320px;
-$headerOnTop: 131px;
-
 $mobileMax: 767px;
 $tabletPortraitMin: 768px;
-$tabletLandscapeMin: 1024px;
-$notebookMin: 1200;
-$lgDesktopMin: 1920px;
+$notebookMin: 1024px;
+$lgDesktopMin: 1300px;
 
 @mixin for-phone-only {
   @media (max-width: $mobileMax) { @content; }
 }
 @mixin for-tablet-portrait-up {
   @media (min-width: $tabletPortraitMin) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: $tabletLandscapeMin) { @content; }
 }
 @mixin for-notebook-up {
   @media (min-width: $notebookMin) { @content; }
