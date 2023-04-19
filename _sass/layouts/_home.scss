@@ -5,19 +5,16 @@
     background-color: $offWhite;
 }
 
-.home-header-container-outer {
-    width: 100%;
-    background-color: $brown;
-}
-
 .home-header-container {
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .home-content-container {
     flex-grow: 1;
     margin: auto;
-    width: 50%;
     background-color: $offWhite;
+    width: 100%;
+    // TODO : do this when width > mobile
+    // width: 50%;
 }
