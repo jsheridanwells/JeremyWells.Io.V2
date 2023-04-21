@@ -3,8 +3,8 @@
 @import "ext/fonts";
 @import "var/font-families";
 @import "layouts/home";
+@import "layouts/page";
 @import "includes/header";
-@import "index";
 
 *,
 *:before,
@@ -20,7 +20,6 @@ body {
   height: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  line-height: 1.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $offWhite;

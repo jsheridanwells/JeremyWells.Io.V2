@@ -1,0 +1,11 @@
+
+{% for post in collections.posts %}
+    {%if post.data.published %}
+        <div class="post-box">
+            <h2>
+                <a href="{{ ost.url }}">{{ post.data.pageTitle }}</a>
+            </h2>
+            <em>{{ post.date | asPostDate }}</em>
+        </div>
+    {% endif %}
+{% endfor %}

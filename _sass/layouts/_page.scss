@@ -1,0 +1,18 @@
+.page-container {
+    background-color: white;
+    height: 100%;
+    padding: 1rem;
+    line-height: initial;
+
+    h2 {
+        text-align: center;
+
+        @include for-notebook-up {
+            text-align: left;
+        }
+    }
+
+    @include for-notebook-up {
+        padding: 5% 10%;
+    }
+}

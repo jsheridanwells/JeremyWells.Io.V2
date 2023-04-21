@@ -1,8 +1,11 @@
 .header>* {
     font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.2em;
+
     a {
         color: $darkGray;
         transition: color 0.3s;
+
         &:hover {
             color: $linkColor;
         }
@@ -12,7 +15,7 @@
 .header {
     display: flex;
     flex-direction: row;
-    
+
     @include for-notebook-up {
         width: 75%;
         margin: auto;
@@ -67,7 +70,7 @@ h1.logo {
 
 p.description {
     display: none;
-    
+
     @include for-notebook-up {
         display: block;
         padding-left: 1rem;
