@@ -12,9 +12,10 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            includes: './_includes',
-            layouts: './_layouts',
-            data: './_data'
+			input: './content',
+            includes: '../_includes',
+            layouts: '../_layouts',
+            data: '../_data'
         },
         templateFormats: [
 			"md",

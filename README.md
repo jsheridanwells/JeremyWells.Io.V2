@@ -10,5 +10,5 @@
 - [] posts page (reuse as much about page as possible)
 - [] get blog post links to work
 - [] programmatic nav links
-- [] folder structure (src, content, etc.)
+- [x] folder structure (src, content, etc.)
 - [] test deploy in netlify
