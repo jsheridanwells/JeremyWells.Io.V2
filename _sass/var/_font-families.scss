@@ -1,0 +1,12 @@
+
+$secularOne: 'Secular One', sans-serif;
+
+@mixin logo-secular-one {
+    font-family: $secularOne;
+    font-weight: 100;
+    font-size: 3rem;
+    a {
+        text-decoration: none;
+        color: $darkGray;
+    }
+}

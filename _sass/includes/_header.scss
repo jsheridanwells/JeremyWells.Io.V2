@@ -1,25 +1,41 @@
 .header>* {
     font-family: 'Nunito Sans', sans-serif;
-
     a {
         color: $darkGray;
         transition: color 0.3s;
-
         &:hover {
             color: $linkColor;
         }
     }
 }
 
-.header-top, .header-nav {
-    flex: 1 1 0;
-}
-
 .header {
     display: flex;
+    flex-direction: row;
+    
+    @include for-notebook-up {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+.header-left {
+    display: flex;
     flex-direction: column;
-    background-color: $medBrown;
-    border-bottom: 5px solid $green;
+    width: 100%;
+
+    @include for-notebook-up {
+        width: 90%;
+    }
+}
+
+.header-right {
+    display: none;
+
+    @include for-notebook-up {
+        display: initial;
+        width: 10%;
+    }
 }
 
 .header-top {
@@ -27,63 +43,89 @@
     flex-direction: row;
 }
 
-// TODO : add this when we have widths > mobile
-// .logo-box,
-// .socials-box {
-//     flex-grow: 1;
-// }
-
 .header-nav {
     padding-bottom: 1rem;
 }
 
 .logo-box {
-    // note, this is only for mobile
     width: 100%;
-}
-
-.socials-box {
-    // note, this is only for mobile
-    display: none;
 }
 
 h1.logo {
     display: block;
     width: 100%;
     height: 100%;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
 
-    a {
-        text-decoration: none;
-        color: $darkGray;
+    @include logo-secular-one;
+    text-align: center;
+
+    @include for-notebook-up {
+        height: initial;
+        text-align: left;
     }
 }
 
 p.description {
-    // TODO : show in widths > mobile
     display: none;
+    
+    @include for-notebook-up {
+        display: block;
+        padding-left: 1rem;
+        font-size: 0.75rem;
+    }
 }
 
 ul.socials-list {
     display: none;
-    // TODO : saving below styles for > mobile widths
-    // display: flex;
-    // flex-direction: column;
-    // text-decoration: none;
-    // list-style-type: none;
+
+    @include for-notebook-up {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+}
+
+li.socials-list-item {
+    margin: 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 ul.nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 0;
     list-style-type: none;
+    justify-content: space-around;
+
+    @include for-notebook-up {
+        justify-content: initial;
+    }
 }
 
 li.nav-item {
-    flex: 1 1 0;
     margin-left: 0.2rem;
+
+    @include for-tablet-portrait-up {
+        margin-left: 0;
+    }
+
+    @include for-notebook-up {
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+
+.header-bottom-line {
+    border-bottom: 5px solid $green;
+
+    @include for-notebook-up {
+        width: 75%;
+        margin: auto;
+    }
 }

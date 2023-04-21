@@ -1,36 +1,39 @@
 <div class="header">
-    <div class="header-top">
-        <div class="logo-box">
-            <h1 class="logo">
-                <a href="/">Jeremy Wells</a>
-            </h1>
-            <p class="description">
-                {{ metadata.description }}
-            </p>
+    <div class="header-left">
+        <div class="header-top">
+            <div class="logo-box">
+                <h1 class="logo">
+                    <a href="/">Jeremy Wells</a>
+                </h1>
+                <p class="description">
+                    {{ metadata.description }}
+                </p>
+            </div>
         </div>
-        <div class="socials-box">
-            <ul class="socials-list">
-                {% for i in metadata.socialList %}
-                    <li class="socials-list-item">
-                        <a href="{{ i.url }}" target="_blank">
-                            <i class="{{ i.name }} fa-2x social-icon"></i>
-                        </a>
-                    </li>
-                {% endfor %}
+        <div class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact">contact</a>
+                </li>
             </ul>
         </div>
     </div>
-    <div class="header-nav">
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="/">blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="/about">about</a>
-            </li>
-            <li class="nav-item">
-                <a href="/contact">contact</a>
-            </li>
+    <div class="header-right">
+        <ul class="socials-list">
+            {% for i in metadata.socialList %}
+                <li class="socials-list-item">
+                    <a href="{{ i.url }}" target="_blank">
+                        <i class="{{ i.name }} fa-2x social-icon"></i>
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
+<div class="header-bottom-line"></div>
