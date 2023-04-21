@@ -1,7 +1,14 @@
 ## TODO : 
 - [x] basic structure
-- [] get blog post links to work
 - [x] set up Sass, bundles into main.css
 - [x] mobile layout (esp header)
-- [] laptop layout (esp header)
+- [x] laptop layout (esp header)
+- [x] 404 page
 - [] wide layout (esp header)
+- [] about page (as page template)
+- [] blog/home/post-list page (reuse about page (margins and stuff) as much as possible)
+- [] posts page (reuse as much about page as possible)
+- [] get blog post links to work
+- [] programmatic nav links
+- [] folder structure (src, content, etc.)
+- [] test deploy in netlify
