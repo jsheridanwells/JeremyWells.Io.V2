@@ -8,6 +8,10 @@ module.exports = {
 		email: 'hi@jeremywells.io',
 		url: 'https//jeremywells.io/about'
 	},
+	navItems: [
+		{ name: 'blog', path: '/', order: 1 },
+		{ name: 'about', path: '/about', order: 2 },
+	],
 	socialList: [
 		{ name: 'fab fa-github', url: 'https://github.comhttps://github.com/jsheridanwells' },
 		{ name: 'fab fa-dev', url: 'https://dev.to/jsheridanwells' },

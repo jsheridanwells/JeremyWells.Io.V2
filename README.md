@@ -9,6 +9,6 @@
 - [] blog/home/post-list page (reuse about page (margins and stuff) as much as possible)
 - [] posts page (reuse as much about page as possible)
 - [] get blog post links to work
-- [] programmatic nav links
+- [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
-- [] test deploy in netlify
+- [] test deploy in netlify (w/ publish branch)
