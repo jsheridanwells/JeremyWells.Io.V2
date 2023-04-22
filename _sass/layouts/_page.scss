@@ -12,6 +12,10 @@
         }
     }
 
+    p {
+        font-size: 14px;
+    }
+
     @include for-notebook-up {
         padding: 5% 10%;
     }

@@ -1,6 +1,6 @@
 ---
 layout: home.njk
 ---
-<div class="page-container">
+<div class="page-container{{ ' ' + pageSelector if pageSelector else '' }}">
     {{ content | safe }}
 </div>

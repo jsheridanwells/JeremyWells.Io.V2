@@ -1,9 +1,10 @@
 ---
 layout: page.njk
 title: About Me
+pageSelector: about-page
 ---
 ## Developer, Dad, Dog Lover, Deadhead
-
+![Site Author](../assets/img/about-me-artie.jpg)
 I am a second-career software engineer currently working in the health care sector. Before that, I was a public school EL teacher. And before that, I wandered South America, often on bicycles.
 
 I'm mainly conversant in .NET, Angular, Node.js, MS SQL, Typescript, Docker, and Azure and I'm always trying to be better about jotting down what I learn along the way. Hopefully more of that will end up here.

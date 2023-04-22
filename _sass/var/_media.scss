@@ -4,14 +4,36 @@ $notebookMin: 1024px;
 $lgDesktopMin: 1300px;
 
 @mixin for-phone-only {
-  @media (max-width: $mobileMax) { @content; }
+  @media (max-width: $mobileMax) {
+    @content;
+  }
 }
+
 @mixin for-tablet-portrait-up {
-  @media (min-width: $tabletPortraitMin) { @content; }
+  @media (min-width: $tabletPortraitMin) {
+    @content;
+  }
 }
+
 @mixin for-notebook-up {
-  @media (min-width: $notebookMin) { @content; }
+  @media (min-width: $notebookMin) {
+    @content;
+  }
 }
+
 @mixin for-lg-desktop-up {
-  @media (min-width: $lgDesktopMin) { @content; }
+  @media (min-width: $lgDesktopMin) {
+    @content;
+  }
+}
+
+@mixin main-width-ctl {
+  @include for-notebook-up {
+    width: 75%;
+    margin: auto;
+  }
+  @include for-lg-desktop-up {
+    width: 50%;
+    margin: auto;
+  }
 }

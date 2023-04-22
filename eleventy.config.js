@@ -10,6 +10,8 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
 	});
 
+	eleventyConfig.addPassthroughCopy('./assets/**/*');
+
     return {
         dir: {
 			input: './content',

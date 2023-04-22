@@ -18,7 +18,5 @@
     margin: auto;
     background-color: $offWhite;
     width: 100%;
-    @include for-notebook-up {
-        width: 75%;
-    }
+    @include main-width-ctl;
 }

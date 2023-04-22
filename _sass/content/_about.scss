@@ -1,0 +1,23 @@
+.about-page {
+    img {
+        border: 2px solid lightblue;
+        height: 45%;
+        width: 45%;
+        margin: 2rem auto 4rem auto;
+        display: block;
+        border-radius: 50%;
+        float: right;
+
+        @include for-notebook-up {
+            margin: 0 auto;
+        }
+
+        @include for-lg-desktop-up {
+            margin: 0 auto 0 10%;
+        }
+    }
+
+    p {
+        padding-right: 3px;
+    }
+}
