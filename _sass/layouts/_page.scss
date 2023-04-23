@@ -5,6 +5,7 @@
     line-height: initial;
 
     h2 {
+        @include h2-title-donegal-one;
         text-align: center;
 
         @include for-notebook-up {

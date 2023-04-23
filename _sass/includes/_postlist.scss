@@ -1,9 +1,14 @@
-.index-container {
-    background-color: white;
-    height: 100%;
-    padding: 1rem;
-}
+.postlist-container {
+    .post-box {
+        margin-bottom: 2rem;
+    }
 
-.post-box {
-    margin: 1rem;
+    .postlist-title-box {
+        margin-bottom: 0.3rem;
+    }
+
+    a.postlist-title {
+        @include h2-title-donegal-one;
+        text-decoration: none;
+    }
 }

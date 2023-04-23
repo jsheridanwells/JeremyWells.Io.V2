@@ -12,3 +12,7 @@
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
 - [] test deploy in netlify (w/ publish branch)
+- [] migrate posts from old site
+- [] find or create automated replacement for Jekyll Github Gist plugin
+
+
