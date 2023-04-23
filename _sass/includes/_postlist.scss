@@ -11,4 +11,14 @@
         @include h2-title-donegal-one;
         text-decoration: none;
     }
+
+    .standfirst-box {
+        margin-bottom: 0.3rem;
+    }
+
+    p.standfirst {
+        @include for-notebook-up {
+            font-size: 1.15rem;
+        }
+    }
 }
