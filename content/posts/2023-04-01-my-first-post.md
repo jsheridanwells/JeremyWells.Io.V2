@@ -1,5 +1,10 @@
 ---
-pageTitle: My First Post
+title: My First Post
 published: true
-standfirst: 'It has been a long time, a truly long time'
+subheading: 'It has been a long time, a truly long time'
+tags: 
+ - career
+ - not 
+ - really 
 ---
+Oh yeah, I need content

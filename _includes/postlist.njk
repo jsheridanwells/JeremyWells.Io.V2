@@ -1,19 +1,31 @@
 <div class="postlist-container">
-    {% for post in collections.posts %}
+    {%- for post in collections.posts -%}
+    {# {%- for post in collections.posts -%} #}
         {%if post.data.published %}
             <div class="post-box">
                 <div class="postlist-title-box">
-                    <a href="" class="postlist-title">{{ post.data.pageTitle }}</a>
+                    <a href="{{ post.url }}" class="postlist-title">{{ post.data.title }}</a>
                 </div>
                 <div class="postlist-date-box">
                     <em>{{ post.date | asPostDate }}</em>
                 </div>
                 <div class="standfirst-box">
                     <p class="standfirst">
-                        {{ post.data.standfirst }}
+                        {{ post.data.subheading }}
                     </p>
+                </div>
+                <div class="tags-box">
+                    {% if post.data.tags and post.data.tags.length > 0 %}
+                    {% for tag in post.data.tags %}
+                        {% if tag !== 'posts' %}
+                        <ul>
+                            <li>{{ tag }}</li>
+                        </ul>
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         {% endif %}
-    {% endfor %}
+    {%- endfor -%}
 </div>
