@@ -9,8 +9,8 @@
 - [x] blog/home/post-list page (reuse about page (margins and stuff) as much as possible)
 - [] posts page (reuse as much about page as possible)
 - [x] Change var names in postlist template
-- - revisit post-list styling, mobile and notebook
 - [x] Get post links to work
+- [x] revisit post-list styling, mobile and notebook
 - - styling for bulleted lists
 - - styling for code snippets
 - - images moved and styled
@@ -19,9 +19,11 @@
 - - script to automate those conversions
 - - replacement for Github Gist plugin
 - - finally migrate posts from old site
-- [] get tags/links to work
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
+- [] collapsing, static navbar
 - [] test deploy in netlify (w/ publish branch)
+- [] get tags/links to work
+- [] RSS
 
 

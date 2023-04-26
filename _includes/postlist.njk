@@ -1,6 +1,5 @@
 <div class="postlist-container">
     {%- for post in collections.posts -%}
-    {# {%- for post in collections.posts -%} #}
         {%if post.data.published %}
             <div class="post-box">
                 <div class="postlist-title-box">
@@ -13,17 +12,6 @@
                     <p class="standfirst">
                         {{ post.data.subheading }}
                     </p>
-                </div>
-                <div class="tags-box">
-                    {% if post.data.tags and post.data.tags.length > 0 %}
-                    {% for tag in post.data.tags %}
-                        {% if tag !== 'posts' %}
-                        <ul>
-                            <li>{{ tag }}</li>
-                        </ul>
-                        {% endif %}
-                    {% endfor %}
-                    {% endif %}
                 </div>
             </div>
         {% endif %}
