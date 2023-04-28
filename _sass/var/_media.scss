@@ -29,10 +29,6 @@ $lgDesktopMin: 1300px;
 
 @mixin main-width-ctl {
   @include for-notebook-up {
-    width: 75%;
-    margin: auto;
-  }
-  @include for-lg-desktop-up {
     width: 50%;
     margin: auto;
   }

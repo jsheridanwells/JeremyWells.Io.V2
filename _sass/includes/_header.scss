@@ -27,6 +27,7 @@ $spaceLeft: 1rem;
 
     @include for-notebook-up {
         width: 90%;
+        padding-left: 7%;
     }
 }
 
@@ -104,10 +105,6 @@ ul.nav-list {
     margin: 0;
     list-style-type: none;
     justify-content: space-around;
-
-    @include for-notebook-up {
-        justify-content: initial;
-    }
 }
 
 li.nav-item {

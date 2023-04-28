@@ -1,5 +1,5 @@
 {
     "layout": "post",
-    "pageSelector": "post",
+    "pageSelector": "post-container",
     "tags": ["posts"]
 }
