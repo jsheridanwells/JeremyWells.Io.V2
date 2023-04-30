@@ -12,7 +12,7 @@
 - [x] Get post links to work
 - [x] revisit post-list styling, mobile and notebook
 - [x] styling for bulleted lists
-- - styling for code snippets
+- [x] styling for code snippets
 - - images moved and styled
 - - script to move other images
 - - debug any other liquid > njk issues
