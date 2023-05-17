@@ -1,6 +1,8 @@
+require('dotenv').config();
 const { DateTime } = require('luxon');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
+const gist = require('./plugins/gist');
 
 module.exports = function(eleventyConfig) {
 
@@ -14,6 +16,14 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter('asPostDate', date => {
 		return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
+	});
+
+	// const authToken = process.env.github_access_token;
+	// const userAgent = process.env.github_user_agent;
+	// eleventyConfig.addPlugin(gist, { authToken, userAgent });
+	eleventyConfig.addPlugin(gist, {
+		authToken: process.env.github_access_token,
+		userAgent: process.env.github_user_agent
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');
