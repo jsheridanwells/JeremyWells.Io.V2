@@ -17,7 +17,7 @@
 - - script to move other images
 - - debug any other liquid > njk issues
 - - script to automate those conversions
-- - replacement for Github Gist plugin
+- [x] replacement for Github Gist plugin
 - - finally migrate posts from old site
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
