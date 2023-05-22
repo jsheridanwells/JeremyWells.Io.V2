@@ -15,10 +15,12 @@
 - [x] styling for code snippets
 - - images moved and styled
 - - script to move other images
-- - debug any other liquid > njk issues
-- - script to automate those conversions
+- [] replace 'post_url'
+- [] uri and slug structure
+- [] bash script to automate gist and post_url syntax correction
+- [] debug any other liquid > njk issues
+- [] finally migrate posts from old site
 - [x] replacement for Github Gist plugin
-- - finally migrate posts from old site
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
 - [] collapsing, static navbar
