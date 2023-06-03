@@ -23,6 +23,7 @@
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
 - [] collapsing, static navbar
+- [] remove unused font imports
 - [] test deploy in netlify (w/ publish branch)
 - [] get tags/links to work
 - [] RSS
