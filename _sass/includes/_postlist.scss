@@ -3,22 +3,29 @@
         margin: 0.5rem 0 3.5rem 0.2rem;
     }
 
-    .postlist-title-box {
-        margin-bottom: 0.3rem;
-    }
-
     a.postlist-title {
-        @include h2-title-donegal-one;
+        @include h2-title-geologica;
         text-decoration: none;
     }
 
+    em.post-date {
+        font-size: 1rem;
+    }
+
+    .postlist-date-box {
+        padding-left: 0.5rem;
+        padding-top: 0.2rem;
+        font-size: 0.9rem;
+        color: $darkerBlue;
+
+    }
+
     .standfirst-box {
-        margin-bottom: 0.3rem;
+        padding-left: 0.5rem;
+        font-size: 1rem;
     }
 
     p.standfirst {
-        @include for-notebook-up {
-            font-size: 1.15rem;
-        }
+        font-size: 1.15rem;
     }
 }

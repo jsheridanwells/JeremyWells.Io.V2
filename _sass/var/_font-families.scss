@@ -1,5 +1,6 @@
 $secularOne: 'Secular One', sans-serif;
 $donegalOne: 'Donegal One', serif;
+$geologica: 'Geologica', sans-serif;
 
 @mixin logo-secular-one {
     font-family: $secularOne;
@@ -12,9 +13,16 @@ $donegalOne: 'Donegal One', serif;
     }
 }
 
+// TODO : remove this and donegal font import
 @mixin h2-title-donegal-one {
     font-family: $donegalOne;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    color: $darkerBlue;
+}
+
+@mixin h2-title-geologica {
+    font-family: $geologica;
+    font-size: 1.5rem;
     color: $darkerBlue;
 }
