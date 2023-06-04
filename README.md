@@ -15,6 +15,7 @@
 - [x] styling for code snippets
 - - images moved and styled
 - - script to move other images
+- - smaller fonts on post list
 - [] replace 'post_url'
 - [] uri and slug structure
 - [] bash script to automate gist and post_url syntax correction
