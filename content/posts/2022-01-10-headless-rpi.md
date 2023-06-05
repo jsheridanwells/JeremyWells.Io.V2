@@ -3,7 +3,6 @@ layout: post
 title: A headless Raspberry Pi workflow
 subheading: Setting up a headless Raspberry Pi mini-server for pain-free, peripheral-free programming
 published: true
-description: Setting up a headless Raspberry Pi mini-server for pain-free, peripheral-free programming
 tags: 
  - raspberryPi
  - IOT 

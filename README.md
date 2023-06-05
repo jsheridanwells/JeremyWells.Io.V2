@@ -14,13 +14,14 @@
 - [x] styling for bulleted lists
 - [x] styling for code snippets
 - - images moved and styled
-- - script to move other images
-- - smaller fonts on post list
-- [] replace 'post_url'
+- [x] script to move other images
+- [x] smaller fonts on post list
+- [x] replace 'post_url'
 - [] uri and slug structure
-- [] bash script to automate gist and post_url syntax correction
+- [x] bash script to automate gist and post_url syntax correction
 - [] debug any other liquid > njk issues
-- [] finally migrate posts from old site
+- [x] finally migrate posts from old site
+- [] 'not found' message for gist
 - [x] replacement for Github Gist plugin
 - - debug any other liquid > njk issues
 - - script to automate those conversions

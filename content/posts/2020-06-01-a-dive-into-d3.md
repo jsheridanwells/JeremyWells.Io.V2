@@ -1,8 +1,7 @@
 ---
-layout: post
 title: A Dive Into D3
 published: true
-standfirst: 'If you are interested in original ways of presenting particularly large, unique, or complex data sets, then a dive into D3 is certainly worth the effort.'
+subheading: 'If you are interested in original ways of presenting particularly large, unique, or complex data sets, then a dive into D3 is certainly worth the effort.'
 ---
 
 ![Browser console after adding API key](/assets/img/2020-05-15/splash.jpg){:class="post-splash"}
@@ -39,12 +38,13 @@ Before we start adding to the code, here's an inventory of our repo so far:
 You won't have to modify any of the files above except `line-chart-.js` for this tutorial.  
 
 
+## 2. Getting an OpenWeatherMap api key
 
 The [OpenWeatherMap](https://openweathermap.org/api) api is an option I like for testing out a new tool using data from an external source. Walk through their sign up process, then you can generate your own API key that's found at [this url](https://home.openweathermap.org/api_keys).
 
 With your api key, we'll do a quick and dirty command to create an api key file that will be ignored in source control, but threaded into the rest of the application:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '01.sh' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '01.sh' %}
 
 When you see a new javascript file called `apiKey.js` with the following contents, you should be ready:
 
@@ -72,7 +72,7 @@ The second variable - `svg` - comes from D3 selecting the `#chart` div, and appe
 
 Now, reload the page, click the __Submit__ button, and you should see a rectangular outline in the `#chart` area. Inside that div, an empty SVG should be rendered:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '04.html' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '04.html' %}
 
 ## 4. Setting the X and Y axes
 
@@ -84,7 +84,7 @@ We'll add the next two steps to the `drawChart` function:
 
 Our data - called `chartData` - will be coming in as an array of objects with two keys: `temp_max` and `time`, looking like this:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '06.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '06.js' %}
 
 The `yScale` is set with D3's `scaleLinear` method. This method basically maps the lowest and highest values of a dataset to the height of the Y axis in our chart. The `domain` method tells us to take the lowest to highest `temp_max` values in our array, and map it to our `range` which is 0 to the height of our chart (plus 10 to give a little space over the highest point that our line will reach). 
 
@@ -96,7 +96,7 @@ The scales are mapping objects that will be used in the next steps, so they don'
 
 We'll come back to another SVG method, this time to place dots across the chart for each time and temperature intersection. Let's add this to `drawChart`:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '07.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '07.js' %}
 
 This is where D3 can be tricky to reason out. It starts with `selectAll`, which says to select elements with the CSS class `.dot`, but we don't have elements with that class until further down the chain (I'm thinking of it like the way `SELECT` comes first in a SQL query before you indicate the table to select from). 
 
@@ -110,23 +110,23 @@ If we refresh our page and submit another zip code, we'll see a series of dots a
 
 Likewise, all of our circles will have been added to the SVG:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '08.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '08.js' %}
 
 ## 6. Connecting the points
 
 Next, we'll draw a line to connect the circles:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '09.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '09.js' %}
 
 `d3.line()` returns a function that will output the X,Y coordinates for our line to follow, and we're indicating that the `time` and `temp_max` properties will determine those values. The output of the `d3.line()` function is an SVG path string: a string of commands for a path to follow.
 
 To actually draw the line, we'll add a `<path>` element to the SVG:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '10.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '10.js' %}
 
 We are appending the path to the SVG, indicating that `chartData` is our data, and using the output of `line` to set the path's `d` attribute (apparently [d stands for data](https://stackoverflow.com/a/23440390/9316547)). Lastly, we are adding a CSS class called 'line' that sets the appearance of the line. In `main.css`, this is how I styled the line in the boilerplate, but play around with it as you'd like:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '11.css' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '11.css' %}
 
 Now if you refresh the browser and submit another zip code, a line will connect the dots:
 
@@ -137,13 +137,13 @@ Now if you refresh the browser and submit another zip code, a line will connect 
 
 Our line doesn't make much sense without axis labels. We will append two more groups (`<g>`) to our SVG to indicate the time of day for every six hours on the X axis:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '12.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '12.js' %}
 
 First we push the object to the bottom of the SVG with a `translate` command, then we use the mapping in the xScale function to determine the values, while the `ticks` set the intervals.
 
 The `append` command for the Y-axis is a little bit simpler to add, but more involved under the hood:
 
-{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e', '13.js' %}
+{% gist '12d41b79a0af6500cb2b3e9c30bd8e4e',  '13.js' %}
 
 For each item in the array that yScale outputs, D3 is adding a vertical align, then an SVG `<text>` element at every interval set by the yScale array. The [D3 Axis Methods](https://observablehq.com/collection/@d3/d3-axis) are worth getting more familiar with as they save a lot of tedious work with setting up axis labels.
 
