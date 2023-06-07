@@ -4,8 +4,8 @@ title: Setting up an N-Tier ASP.NET Core App
 series: '.NET Core and Angular Walking Skeleton'
 published: true
 subheading: >-
-    'In this post, we take an ASP.NET Core WebApi application from 
-    boilerplate code to adding our own functionality.'
+    In this post, we take an ASP.NET Core WebApi application from 
+    boilerplate code to adding our own functionality.
 tags: 
  - csharp 
  - dotnet 

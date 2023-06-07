@@ -18,15 +18,15 @@ module.exports = function (eleventyConfig) {
 	 * This was really helpful: 
 	 * https://github.com/11ty/eleventy/issues/813#issuecomment-1037874929
 	 */
-	eleventyConfig.addShortcode('post_url', function(path) {
+	eleventyConfig.addShortcode('post_url', function (path) {
 		// find the posts collection in this.ctx for nunjucks, this.context.environments for liquid
 		const collections = this.ctx?.collections || this.context?.environments.collections | {};
 		const posts = collections?.posts || [];
-		const post = posts.find(p => p.url === `/posts/${ path }/`);
+		const post = posts.find(p => p.url === `/posts/${path}/`);
 		if (post) {
 			return post.url;
 		}
-		throw `post_url :: The URL for ${ path } was not found`;
+		throw `post_url :: The URL for ${path} was not found`;
 	});
 
 	eleventyConfig.addFilter('asPostDate', date => {
@@ -35,7 +35,8 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(gist, {
 		authToken: process.env.github_access_token,
-		userAgent: process.env.github_user_agent
+		userAgent: process.env.github_user_agent,
+		debug: process.env.NODE_ENV === 'development'
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');

@@ -9,6 +9,7 @@
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
     "build": "npm-run-all build:*",
     "test": "jest"
   },
