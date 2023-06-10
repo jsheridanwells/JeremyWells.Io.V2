@@ -36,7 +36,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(gist, {
 		authToken: process.env.github_access_token,
 		userAgent: process.env.github_user_agent,
-		debug: process.env.NODE_ENV === 'development'
+		debug: process.env.NODE_ENV === 'development', 
+		useCache: process.env.NODE_ENV === 'development'
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');

@@ -26,8 +26,8 @@
 - - debug any other liquid > njk issues
 - - script to automate those conversions
 - [x] replacement for Github Gist plugin
-- [] caching in Gist plugin
-- [] option to output Gist error in debug
+- [x] caching in Gist plugin
+- [x] option to output Gist error in debug
 - - customize URIs - see https://alexpearce.me/2020/06/jekyll-to-eleventy/
 - - finally migrate posts from old site
 - [x] programmatic nav links

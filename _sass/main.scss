@@ -47,3 +47,14 @@ a {
     color: $linkColor;
   }
 }
+
+// if debug mode, 
+// and if eleventy-gist plugin renders error in page, 
+// make it stand out 
+.gist-error {
+  border: 1px solid red;
+  padding: 1rem;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
