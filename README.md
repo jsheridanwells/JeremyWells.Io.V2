@@ -13,7 +13,8 @@
 - [x] revisit post-list styling, mobile and notebook
 - [x] styling for bulleted lists
 - [x] styling for code snippets
-- - images moved and styled
+- [x] images moved and styled
+- [x] fix `{:class="post-splash"}` tag, also `{:class="post-img}`
 - [x] script to move other images
 - [x] smaller fonts on post list
 - [x] replace 'post_url'
@@ -21,7 +22,7 @@
 - [x] bash script to automate gist and post_url syntax correction
 - [] debug any other liquid > njk issues
 - [x] finally migrate posts from old site
-- [] 'not found' message for gist
+- [x] 'not found' message for gist
 - [x] replacement for Github Gist plugin
 - - debug any other liquid > njk issues
 - - script to automate those conversions
@@ -33,6 +34,8 @@
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
 - [] collapsing, static navbar
+- [] copy fn on code
+- [] enlarge modal on images
 - [] remove unused font imports
 - [] test deploy in netlify (w/ publish branch)
 - [] get tags/links to work

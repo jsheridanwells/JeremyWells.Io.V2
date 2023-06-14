@@ -3,15 +3,27 @@ const { DateTime } = require('luxon');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const gist = require('eleventy-gist');
+const markdownIt = require('markdown-it');
+const markdownItAttrs = require('markdown-it-attrs');
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.setServerOptions({
+		watch: ['./_site/assets/css/**/*.css']
+	});
+
 	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addPlugin(bundlerPlugin);
 
-	eleventyConfig.setServerOptions({
-		watch: ['./_site/assets/css/**/*.css']
+	eleventyConfig.addPlugin(gist, {
+		authToken: process.env.github_access_token,
+		userAgent: process.env.github_user_agent,
+		debug: process.env.NODE_ENV === 'development',
+		useCache: process.env.NODE_ENV === 'development'
 	});
+
+	const markdownLib = markdownIt({ html: true }).use(markdownItAttrs)
+	eleventyConfig.setLibrary('md', markdownLib)
 
 	/**
 	 * Recreating Jekyll's post_url as best I can. 
@@ -31,13 +43,6 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addFilter('asPostDate', date => {
 		return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
-	});
-
-	eleventyConfig.addPlugin(gist, {
-		authToken: process.env.github_access_token,
-		userAgent: process.env.github_user_agent,
-		debug: process.env.NODE_ENV === 'development', 
-		useCache: process.env.NODE_ENV === 'development'
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');
