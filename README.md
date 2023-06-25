@@ -38,7 +38,7 @@
 - [x] minify css
 - [x] add vendor css to inline css
 - [x] get same-site links to not open in new tab
-- [] remove unused font imports
+- [x] remove unused font imports
 
 ## new functionality
 - [] collapsing, static navbar
