@@ -32,16 +32,23 @@
 - [] debug any other liquid > njk issues
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
-- [o] minify js
+- [x] minify js
+
+## import posts and optimization
 - [] minify css
 - [] add vendor css to inline css
 - [] get same-site links to not open in new tab
+- [] remove unused font imports
+
+## new functionality
 - [] collapsing, static navbar
 - [] copy fn on code
 - [] enlarge modal on images
-- [] remove unused font imports
-- [] test deploy in netlify (w/ publish branch)
 - [] get tags/links to work
 - [] RSS
+
+## ready to go
+- [] test deploy in netlify (w/ publish branch)
+- [] move to jeremywells.io
 
 
