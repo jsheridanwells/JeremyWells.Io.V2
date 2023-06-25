@@ -36,8 +36,8 @@
 
 ## import posts and optimization
 - [x] minify css
-- [] add vendor css to inline css
-- [] get same-site links to not open in new tab
+- [x] add vendor css to inline css
+- [x] get same-site links to not open in new tab
 - [] remove unused font imports
 
 ## new functionality

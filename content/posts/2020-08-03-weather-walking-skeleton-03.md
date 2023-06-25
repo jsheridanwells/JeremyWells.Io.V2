@@ -20,7 +20,7 @@ tags:
 
 This post is part of an ongoing series where we build a ["walking skeleton"](https://whatis.techtarget.com/definition/walking-skeleton#:~:text=A%20walking%20skeleton%2C%20in%20a,basic%20components%20of%20the%20system.) application using ASP.NET Core and Angular as well as other technologies for deployment and testing. By now, our application is a minimally functional web API that organizes and returns weather data from a location. In this post, we will use [xUnit](https://xunit.net/) to test how a service handles calls to a third-party API, then how a controller responds to a successful response. In the next post, we'll then use those tests to scaffold some exception handling that's missing from our classes right now. As in other posts, the aim of this article is to go through the steps with detailed explanations.
 
-If you would like to start from the beginning, [this post]({% post_url '2020-06-11-starting-up-an-aspnetcore3-project'  %}){:class="no-target"} will introduce the project and walk you up to this point. If you're just here for a walkthrough of testing with xUnit, then you can:
+If you would like to start from the beginning, [this post]({% post_url '2020-06-11-starting-up-an-aspnetcore3-project'  %}){no-target} will introduce the project and walk you up to this point. If you're just here for a walkthrough of testing with xUnit, then you can:
 
 1. Begin by cloning the project up to this point and `cd`-ing into it:
 ```bash

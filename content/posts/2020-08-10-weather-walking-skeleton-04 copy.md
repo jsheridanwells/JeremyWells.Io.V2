@@ -17,7 +17,7 @@ tags:
 
 ## Introduction and prerequisites
 
-In this post, we're continuing our "walking skeleton" application where we build and deploy a minimal application with an ASP.NET Core WebApi and an Angular client. At this stage, the API is almost ready. We've got a controller that accepts a city location, a service that calls the third-party [OpenWeatherMap](https://openweathermap.org/api) API to return forecasts for that location, and in the last post we added the xUnit testing framework to describe the API. If you would like to start from the beginning, [this is the first post]({% post_url '2020-06-11-starting-up-an-aspnetcore3-project'  %}){:class="no-target"}. 
+In this post, we're continuing our "walking skeleton" application where we build and deploy a minimal application with an ASP.NET Core WebApi and an Angular client. At this stage, the API is almost ready. We've got a controller that accepts a city location, a service that calls the third-party [OpenWeatherMap](https://openweathermap.org/api) API to return forecasts for that location, and in the last post we added the xUnit testing framework to describe the API. If you would like to start from the beginning, [this is the first post]({% post_url '2020-06-11-starting-up-an-aspnetcore3-project'  %}){.no-target}. 
 
 The goal of this series, and this application, is to create a bare-bones, testable, and deploy-able web application that can be used as a reference for starting similar projects. In each of these steps, I intend to describe the code we add in detail.
 
