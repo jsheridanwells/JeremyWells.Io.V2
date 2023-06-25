@@ -6,6 +6,7 @@ const gist = require('eleventy-gist');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const { minify } = require('terser');
+const CleanCss = require('clean-css');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
@@ -54,6 +55,10 @@ module.exports = function (eleventyConfig) {
 			console.log('Eleventy Config --> Terser error: ', e);
 			cb(null, code);
 		}
+	});
+
+	eleventyConfig.addFilter('cssmin', function(code){
+		return new CleanCss({}).minify(code).styles;
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');

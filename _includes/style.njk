@@ -1,0 +1,4 @@
+{% set styleBlock %}
+{% include 'styles/main.css' %}
+{%  endset %}
+<style>{{ styleBlock | cssmin | safe }}</style>

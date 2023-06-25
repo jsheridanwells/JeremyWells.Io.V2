@@ -4,11 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="{{ metadata.description }}">
     <meta name="generator" content="{{ eleventy.generator }}">
+
     {%- css %}{% include "assets/vendor/prism-vsc-plus.css" %}{% endcss %}
-    <style>
-        {% getBundle "css" %}
-    </style>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
+    <style>{% getBundle "css" %}</style>
     <script src="https://kit.fontawesome.com/a7ab7f4738.js" crossorigin="anonymous"></script>
+    {% include "style.njk" %}
     <title>{{ title or metadata.title }}</title>
 </head>

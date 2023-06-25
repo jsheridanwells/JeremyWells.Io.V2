@@ -4,8 +4,8 @@
   "description": "Code for blog found at jeremywells.io",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch _sass:_site/assets/css",
-    "build:sass": "sass --no-source-map _sass:_site/assets/css",
+    "watch:sass": "sass --watch _sass:_includes/styles",
+    "build:sass": "sass --no-source-map _sass:_includes/styles",
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
@@ -19,6 +19,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "clean-css": "^5.3.2",
     "dotenv": "^16.0.3",
     "eleventy-gist": "^1.1.0",
     "jest": "^29.5.0",

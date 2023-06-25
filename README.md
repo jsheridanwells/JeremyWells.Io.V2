@@ -35,7 +35,7 @@
 - [x] minify js
 
 ## import posts and optimization
-- [] minify css
+- [x] minify css
 - [] add vendor css to inline css
 - [] get same-site links to not open in new tab
 - [] remove unused font imports

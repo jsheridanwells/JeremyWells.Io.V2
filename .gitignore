@@ -4,3 +4,5 @@ package-lock.json
 .env
 .vscode/
 .idea/
+_includes/styles/**/*
+!includes/styles/.gitkeep
