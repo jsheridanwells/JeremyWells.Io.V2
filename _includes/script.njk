@@ -1,0 +1,5 @@
+{% set scriptBlock %}
+{% include 'scripts/open-in-new-tab-except-no-target.js' %}
+{% include 'scripts/add-lang-to-code-blocks.js' %}
+{% endset %}
+<script>{{ scriptBlock | jsmin | safe }}</script>

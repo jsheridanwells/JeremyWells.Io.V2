@@ -5,6 +5,7 @@ const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 const gist = require('eleventy-gist');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
+const { minify } = require('terser');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
@@ -38,11 +39,21 @@ module.exports = function (eleventyConfig) {
 		if (post) {
 			return post.url;
 		}
-		throw `post_url :: The URL for ${path} was not found`;
+		throw `Eleventy Config --> post_url :: The URL for ${path} was not found`;
 	});
 
 	eleventyConfig.addFilter('asPostDate', date => {
 		return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
+	});
+
+	eleventyConfig.addNunjucksAsyncFilter('jsmin', async function(code, cb){
+		try {
+			const minified = await minify(code);
+			cb(null, minified.code);
+		} catch(e) {
+			console.log('Eleventy Config --> Terser error: ', e);
+			cb(null, code);
+		}
 	});
 
 	eleventyConfig.addPassthroughCopy('./assets/**/*');
