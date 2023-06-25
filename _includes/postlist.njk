@@ -1,5 +1,5 @@
 <div class="postlist-container">
-    {%- for post in collections.posts -%}
+    {%- for post in collections.posts | reverse -%}
         {%if post.data.published and post.data.title %}
             <div class="post-box">
                 <div class="postlist-title-box">

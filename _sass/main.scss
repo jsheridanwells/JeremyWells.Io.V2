@@ -15,6 +15,7 @@
 *:after {
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
@@ -22,6 +23,8 @@ html {
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +39,7 @@ h4,
 h5,
 h6 {
   font-family: 'Donegal One', serif;
+
   a {
     text-decoration: none;
   }
@@ -44,9 +48,14 @@ h6 {
 a {
   color: #000;
   transition: color 0.3s;
+
   &:hover {
     color: $linkColor;
   }
+}
+
+code {
+  overflow-wrap: break-word;
 }
 
 // if debug mode, 
