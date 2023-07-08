@@ -1,5 +1,3 @@
-$spaceLeft: 1rem;
-
 .header>* {
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.2em;
@@ -46,7 +44,7 @@ $spaceLeft: 1rem;
 }
 
 .header-nav {
-    padding-bottom: $spaceLeft;
+    padding-bottom: $nav-space-Left;
 }
 
 .logo-box {
@@ -64,7 +62,7 @@ h1.logo {
     @include for-notebook-up {
         height: initial;
         text-align: left;
-        padding-left: $spaceLeft;
+        padding-left: $nav-space-Left;
     }
 }
 
@@ -73,7 +71,7 @@ p.description {
 
     @include for-notebook-up {
         display: block;
-        padding-left: $spaceLeft;
+        padding-left: $nav-space-Left;
         font-size: 0.95rem;
     }
 }

@@ -1,0 +1,17 @@
+<div class="header header-collapsed">
+    <div class="logo-box">
+        <h1 class="logo-collapsed">
+            <a href="/">Jeremy Wells</a>
+        </h1>
+    </div>
+    <div class="header-nav-collapsed">
+        <ul class="nav-list">
+            {% for i in metadata.navItems %}
+                <li class="nav-item-collapsed">
+                    <a href="{{ i.path }}">{{ i.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="header-bottom-line"></div>

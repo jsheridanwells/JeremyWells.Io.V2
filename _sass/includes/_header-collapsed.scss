@@ -1,0 +1,18 @@
+.logo-collapsed {
+    @include logo-secular-one;
+    font-size: 1.2rem;
+    padding-left: $nav-space-Left;
+}
+
+.logo-box {
+    width: 50%;
+}
+
+.header-nav-collapsed {
+    width: 50%;
+}
+
+li.nav-item-collapsed>a {
+    display: inline-block;
+    padding: 0.5rem;
+}
