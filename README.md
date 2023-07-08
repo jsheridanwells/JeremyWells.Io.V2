@@ -35,7 +35,7 @@
 - [x] minify js
 
 ## import posts and optimization
-- [x] minify css
+- ~~[x] minify css~~
 - [x] add vendor css to inline css
 - [x] get same-site links to not open in new tab
 - [x] remove unused font imports
@@ -51,4 +51,6 @@
 - [] test deploy in netlify (w/ publish branch)
 - [] move to jeremywells.io
 
+## maybe later
+- [] minify css
 

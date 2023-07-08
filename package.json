@@ -4,8 +4,10 @@
   "description": "Code for blog found at jeremywells.io",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch _sass:_includes/styles",
-    "build:sass": "sass --no-source-map _sass:_includes/styles",
+    "before_watch:sass_before": "sass --watch _sass:_includes/styles",
+    "before_build:sass_before": "sass --no-source-map _sass:_includes/styles",
+    "watch:sass": "sass --watch _sass:_site/assets/css",
+    "build:sass": "sass --no-source-map _sass:_site/assets/css",
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",

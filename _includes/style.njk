@@ -1,4 +1,17 @@
+{# <div>
+    removing this for now until I can get it working w/ SASS a little better. 
+    saving this file w/ everything i used so i can pick up 
+    eleventy config script is below 
+</div> #}
 {% set styleBlock %}
 {% include 'styles/main.css' %}
 {%  endset %}
 <style>{{ styleBlock | cssmin | safe }}</style>
+{# add include to head.njk #}
+{# {% include "style.njk" %} #}
+{# add this to 11ty config #}
+<script>
+	// eleventyConfig.addFilter('cssmin', function(code){
+	// 	return new CleanCss({}).minify(code).styles;
+	// });
+</script>
