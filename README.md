@@ -42,6 +42,7 @@
 
 ## new functionality
 - [] collapsing, static navbar
+ - [] bug w/ post styles not loading ??
 - [] copy fn on code
 - [] enlarge modal on images
 - [] get tags/links to work
