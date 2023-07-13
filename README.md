@@ -40,15 +40,22 @@
 - [x] get same-site links to not open in new tab
 - [x] remove unused font imports
 
+## ready to go
+
+### bugs bugs bugs
+- [] github link
+- [] about page links in new tab
+- [] clean out test posts
+- [] Experiment w/ wider post view on fullscreen (770 vs 650)
+
+- [] test deploy in netlify (w/ publish branch)
+- [] move to jeremywells.io
+
+
 ## new functionality
 - [] collapsing, static navbar
 - [] copy fn on code
 - [] enlarge modal on images
 - [] get tags/links to work
 - [] RSS
-
-## ready to go
-- [] test deploy in netlify (w/ publish branch)
-- [] move to jeremywells.io
-
-
+- [] eleventy-gist plugin - add sm link to gist @bottom
