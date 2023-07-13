@@ -43,9 +43,9 @@
 ## ready to go
 
 ### bugs bugs bugs
-- [] github link
-- [] about page links in new tab
-- [] clean out test posts
+- [x] github link
+- [x] about page links in new tab
+- [x] clean out test posts
 - [] Experiment w/ wider post view on fullscreen (770 vs 650)
 
 - [] test deploy in netlify (w/ publish branch)

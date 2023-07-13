@@ -13,7 +13,7 @@ module.exports = {
 		{ name: 'about', path: '/about', order: 2 },
 	],
 	socialList: [
-		{ name: 'fab fa-github', url: 'https://github.comhttps://github.com/jsheridanwells' },
+		{ name: 'fab fa-github', url: 'https://github.com/jsheridanwells' },
 		{ name: 'fab fa-dev', url: 'https://dev.to/jsheridanwells' },
 		{ name: 'fab fa-linkedin', url: 'https://linkedin.com/in/jsheridanwells' }
 	]
