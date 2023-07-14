@@ -2,5 +2,8 @@
 layout: page.njk
 ---
 <div class="post post-container">
+    {% if title %}
+        <h2 class="post-title">{{ title }}</h2>
+    {% endif %}
     {{ content | safe }}
 </div>
