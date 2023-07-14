@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/023cfd7e-5ee3-40d9-83ee-7726fc73fd2f/deploy-status)](https://app.netlify.com/sites/jeremywellsio/deploys)
+
 ## TODO : 
 - [x] basic structure
 - [x] set up Sass, bundles into main.css
