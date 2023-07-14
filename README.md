@@ -50,8 +50,8 @@
 - [x] clean out test posts
 - [x] Experiment w/ wider post view on fullscreen (770 vs 650)
 
-- [] test deploy in netlify (w/ publish branch)
-- [] move to jeremywells.io
+- [x] test deploy in netlify (w/ publish branch)
+- [x] move to jeremywells.io
 
 
 ## new functionality
