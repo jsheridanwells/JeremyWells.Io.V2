@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="{{ metadata.description }}">
     <meta name="generator" content="{{ eleventy.generator }}">
+    {% if processDotEnv.nodeEnv !== 'development' %}
+        <script async defer data-domain="jeremywells.io" src="https://plausible.io/js/plausible.js"></script>
+    {% endif %}
     <script src="https://kit.fontawesome.com/a7ab7f4738.js" crossorigin="anonymous"></script>
     {% include "style.njk" %}
     <title>{{ title or metadata.title }}</title>
