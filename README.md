@@ -52,6 +52,7 @@
 
 - [x] test deploy in netlify (w/ publish branch)
 - [x] move to jeremywells.io
+- [x] fix paragraph line heights and h3 styles
 
 
 ## new functionality

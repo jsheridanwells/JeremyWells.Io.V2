@@ -1,7 +1,10 @@
 $secularOne: 'Secular One', sans-serif;
 $donegalOne: 'Donegal One', serif;
 $geologica: 'Geologica', sans-serif;
+$sourceSerif: 'Source Serif 4', serif;
 
+// use(s):
+// - Main logo in header
 @mixin logo-secular-one {
     font-family: $secularOne;
     font-weight: 100;
@@ -13,7 +16,14 @@ $geologica: 'Geologica', sans-serif;
     }
 }
 
-// TODO : remove this and donegal font import
+// use(s):
+// - Default font for inline text 
+@mixin main-font-raleway {
+      font-family: "Raleway", sans-serif;
+      font-size: 1rem;
+}
+
+// TODO : remove this and donegal font import?
 @mixin h2-title-donegal-one {
     font-family: $donegalOne;
     font-weight: 500;
@@ -21,8 +31,19 @@ $geologica: 'Geologica', sans-serif;
     color: $darkerBlue;
 }
 
+// use(s):
+// - Headings in blog posts
 @mixin h2-title-geologica {
     font-family: $geologica;
     font-size: 1.5rem;
     color: $darkerBlue;
+}
+
+// use(s):
+// - Paragraphs in blog posts
+@mixin p-post-source-serif {
+    font-family: $sourceSerif;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.003em;
 }

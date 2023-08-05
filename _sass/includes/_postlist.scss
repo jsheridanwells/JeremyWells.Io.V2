@@ -26,6 +26,6 @@
     }
 
     p.standfirst {
-        font-size: 1.15rem;
+        @include main-font-raleway;
     }
 }

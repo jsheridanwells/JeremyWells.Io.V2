@@ -256,7 +256,7 @@ $ docker run -it -p 5000:5000 \
 ```
 ...and now you have settings from the command line. 
 
-# Setting the configuration provider hierarchy
+## Setting the configuration provider hierarchy
 
 The default order of configuration providers that get called is logical for most situations, but ASP.NET Core also contains a scaffolding method for overriding the default order. 
 

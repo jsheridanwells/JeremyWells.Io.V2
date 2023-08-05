@@ -6,3 +6,9 @@ h2.post-title {
     @include h2-title-geologica;
     margin-bottom: 4rem;
 }
+
+p {
+    @include p-post-source-serif;
+    padding-right: 10%;
+    padding: 0 10% 1.2% 0;
+}
