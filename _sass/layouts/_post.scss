@@ -3,7 +3,12 @@
         text-align: left;
     }
 
+    h3 {
+        color: $darkerBlue;
+    }
+
     li {
         margin-bottom: 1rem;
+        @include p-post-source-serif;
     }
 }
