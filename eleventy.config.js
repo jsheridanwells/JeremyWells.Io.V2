@@ -21,7 +21,8 @@ module.exports = function (eleventyConfig) {
 		authToken: process.env.github_access_token,
 		userAgent: process.env.github_user_agent,
 		debug: process.env.NODE_ENV === 'development',
-		useCache: process.env.NODE_ENV === 'development'
+		useCache: process.env.NODE_ENV === 'development',
+		addHiddenField: true
 	});
 
 	const markdownLib = markdownIt({ html: true }).use(markdownItAttrs)
