@@ -28,10 +28,8 @@
 - [x] replacement for Github Gist plugin
 - [x] caching in Gist plugin
 - [x] option to output Gist error in debug
-- [] customize URIs - see https://alexpearce.me/2020/06/jekyll-to-eleventy/
-- [] uri and slug structure
 - [x] finally migrate posts from old site
-- [] debug any other liquid > njk issues
+- [x] debug any other liquid > njk issues
 - [x] programmatic nav links
 - [x] folder structure (src, content, etc.)
 - [x] minify js
@@ -57,8 +55,10 @@
 
 ## new functionality
 - [] collapsing, static navbar
-- [] copy fn on code
+- [x] copy fn on code
 - [] enlarge modal on images
 - [] get tags/links to work
+- [] customize URIs - see https://alexpearce.me/2020/06/jekyll-to-eleventy/
+- [] uri and slug structure
 - [] RSS
 - [] eleventy-gist plugin - add sm link to gist @bottom
